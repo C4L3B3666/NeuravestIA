@@ -1,0 +1,474 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import "tailwindcss";
+
+@theme {
+    --font-anton: "Anton", system-ui;
+    --font-inter: "Inter", system-ui, sans-serif;
+    --font-ibm: "IBM Plex Sans", system-ui, sans-serif;
+}
+
+.animacao {
+    animation: linkMenuFade ease forward 0.3s;
+}
+
+.linkMenu {
+    @apply text-[11pt] font-light opacity-0 transform translate-x-12 transition-all duration-700 sm:opacity-100 lg:text-[12pt] lg:font-medium lg:hover:text-amber-300 lg:translate-none lg:duration-75
+}
+
+.linkMenu:nth-child(1) {
+    @apply delay-300 lg:delay-0
+}
+
+.linkMenu:nth-child(2) {
+    @apply delay-[.44s] lg:delay-0
+}
+
+.linkMenu:nth-child(3) {
+    @apply delay-[.58s] lg:delay-0
+}
+
+.linkMenu:nth-child(4) {
+    @apply delay-[.72s] lg:delay-0
+}
+
+.linkMenu:nth-child(5) {
+    @apply delay-[.81s] lg:delay-0
+}
+
+.linkMenu:nth-child(6) {
+    @apply delay-[.91s] lg:delay-0
+}
+
+.linkMenu:nth-child(7) {
+    @apply delay-[.95s] lg:delay-0
+}
+
+header.ativo .linkMenu {
+    @apply opacity-100 translate-x-0
+}
+
+.linha {
+    @apply bg-amber-300 w-9 h-1 my-1 rounded-full relative
+}
+
+.navMenuHamburguer {
+    @apply cursor-pointer p-2 z-[3]
+}
+
+header.ativo nav:nth-child(2) {
+    @apply translate-x-0
+}
+
+header.ativo .navMenuHamburguer .linha2 {
+    @apply right-2.5
+}
+
+header.ativo .navMenuHamburguer .linha3 {
+    @apply -right-2.5
+}
+
+.btn {
+    @apply bg-amber-300 px-2 py-1 text-[#151515] font-ibm font-medium shadow-[0_0_14px_#FFD230] rounded-full cursor-pointer border-2 border-amber-300 text-[11pt];
+}
+
+.btnPrimario, .btnPrimarioForm {
+    @apply border-[#2E2C2C] bg-transparent shadow-[0_0_14px_#2E2C2C] text-white hover:bg-amber-300 hover:text-[#151515] hover:border-amber-300 hover:shadow-[0_0_14px_#FFD230];
+}
+.btnPrimarioForm {
+    @apply border-0 bg-transparent shadow-none hover:bg-transparent hover:shadow-none hover:text-red-500
+}
+
+.textosGrandeDestaque, .textosGrandeDestaquex {
+    @apply font-inter text-[25pt] px-4 text-center font-extrabold text-white sm:text-[29pt] lg:text-[35pt] lg:w-[40%]
+}
+
+.textosGrandeDestaquex {
+    @apply lg:w-[60%]
+}
+
+.textoColorido {
+    @apply text-amber-300
+}
+
+.textoBold {
+    @apply font-extrabold
+}
+
+.textoColoridoBold {
+    @apply text-amber-300 font-extrabold
+}
+
+.tituloSecao {
+    @apply text-gray-400 font-bold text-[20pt] font-ibm uppercase
+}
+
+.divSecaoLateral {
+    @apply lg:ml-4 hidden sm:block pt-2 lg:pt-0
+}
+
+.navContentorTextosLaterais {
+    @apply flex flex-col justify-between lg:flex-row
+}
+
+.textoSecao, .textoLateralSecao {
+    @apply text-white font-inter font-light
+}
+
+.textoLateralSecao {
+    @apply font-bold
+}
+
+.imgParceiros {
+    @apply w-[200px]
+}
+
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-scroll {
+  animation: scroll 30s linear infinite;
+}
+
+.fade-edge::before,
+.fade-edge::after {
+    /* overflow: hidden;
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    z-index: 1;
+    pointer-events: none;  */
+    @apply overflow-hidden content-[''] absolute top-0 w-1/2 h-full z-[1] pointer-events-none sm:w-[45%]
+}
+
+.fade-edge::before {
+    left: 0;
+    background: linear-gradient(to right, #151515 89%, transparent 100%);
+}
+
+.fade-edge::after {
+    right: 0;
+    background: linear-gradient(to left, #151515 89%, transparent 100%);
+}
+
+.divDadosEstatisticos {
+    @apply mx-1.5 min-w-max h-max text-center p-4 m-2 cursor-pointer relative rounded-[10px] flex-initial snap-start 
+}
+
+.divDadosEstatisticos h4 {
+    @apply font-inter uppercase font-bold text-[10pt] text-transparent bg-clip-text bg-[linear-gradient(90deg,_#fff_0%,_#fff_50%,_gray_100%)]
+}
+
+.textoGradiente {
+    @apply text-transparent bg-clip-text bg-[linear-gradient(90deg,_#fff_0%,_#fff_50%,_gray_100%)]
+}
+
+.divDadosEstatisticos p {
+    @apply font-inter text-white py-1.5 font-bold text-[15pt]
+}
+
+.divDadosEstatisticos small {
+    @apply font-inter text-[gray] py-1.5 font-bold
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+.hide-scrollbar {
+    -ms-overflow-style: none; 
+    scrollbar-width: none; 
+}
+
+.carousel-button {
+    @apply absolute z-[1] text-[#151515] border-none text-[20pt] shadow-[0_0_12px_#FFD230] cursor-pointer w-10 h-10 rounded-[50%] bg-amber-300 lg:hidden
+}
+
+.carousel-button.prev {
+    @apply -left-9 sm:-left-8
+}
+
+.carousel-button.next {
+    @apply -right-3 sm:-right-2;
+}
+
+.btnMostarPassoInvestimento {
+    @apply rounded-full p-1 font-inter text-white border-2 border-[#2E2C2C] text-[11pt] shadow-[0_0_12px_#2E2C2C] cursor-pointer bg-[#2E2C2C]
+}
+
+.btnMostarPassoInvestimento.ativo {
+    @apply bg-amber-300 text-[#151515] shadow-[0_0_12px_#FFD230] border-amber-300
+}
+
+.tituloPrincipalComoInvestir {
+    @apply font-ibm text-[13pt] text-white font-medium uppercase
+}
+
+.contentCardComoInvestir {
+    @apply flex items-center flex-col my-7
+}
+
+.textoPrincipalComoInvestir {
+    @apply text-white text-center py-1 font-inter font-light
+}
+
+.cardComoInvestir {
+    @apply p-2 border-2 border-[#2E2C2C] my-2 rounded-lg w-[85%] text-center cursor-pointer sm:w-[40%] lg:w-[20%]
+}
+
+.cardComoInvestir .iconeComoInvestir i {
+    @apply text-amber-300 text-[13pt]
+}
+
+.cardComoInvestir .textoPassoComoInvestir {
+    @apply font-inter font-bold text-amber-300 text-[12pt]
+}
+
+.cardComoInvestir .textoComoInvestir{
+    @apply font-inter font-light py-2 text-white
+}
+
+hr {
+    @apply my-4 border-amber-300 w-1/2 m-auto rounded-full opacity-90
+}
+
+.hr1 {
+    @apply my-1 border-amber-300 w-1/2 m-auto rounded-full opacity-90
+}
+
+.acordeao {
+  @apply border-b border-[#2E2C2C] py-4 transition-all w-11/12 sm:w-3/5 lg:w-1/3;
+}
+
+.acordeaoQuestao {
+  @apply flex justify-between items-center cursor-pointer py-2;
+}
+
+.acordeaoResposta {
+  @apply max-h-0 overflow-hidden opacity-0 transition-all duration-300;
+  ul {
+    @apply pl-6 pt-2 space-y-2;
+    li {
+      @apply relative pl-4;
+      &::before {
+        @apply content-[''] absolute left-0 top-2 w-2 h-2 bg-amber-300 rounded-full;
+      }
+    }
+  }
+}
+
+.acordeao.ativo .acordeaoResposta {
+  @apply max-h-[500px] opacity-100 py-4;
+}
+
+.acordeao.ativo h5 {
+    @apply text-amber-300 transition-all duration-500 ease-in-out;
+}
+
+.acordeao.ativo .checkAcordeao {
+    @apply text-amber-300 shadow-[0_0_14px_#FFD230];
+}
+
+.acordeaoQuestao h5 {
+    @apply font-ibm text-[17pt] uppercase font-bold text-gray-500
+}
+
+.acordeaoResposta {
+    @apply text-white font-inter font-extralight pt-2.5 opacity-0
+}
+
+.checkAcordeao {
+    @apply text-gray-500 font-ibm font-medium shadow-[0_0_14px_#6A7282] rounded-full text-[14pt] transition-all duration-500 ease-in-out
+}
+
+.fade-mask {
+    mask-image: linear-gradient(to bottom, black 0%, black 80%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to bottom, black 0%, black 80%, transparent 100%);
+}
+
+.expanded {
+    max-height: none !important;
+}
+
+.cardFundador {
+    @apply border-2 border-[#2E2C2C] m-2 rounded-lg p-2.5 flex flex-col items-center justify-center cursor-pointer text-center bg-[#151515] overflow-hidden w-[85%] sticky top-20 sm:w-3/6 lg:w-1/4 lg:top-16
+}
+
+.cardFundador .imagemFundador {
+    @apply w-[350px] grayscale-100 transition-all ease-in duration-500
+}
+
+.cardFundador:hover .imagemFundador {
+    @apply grayscale-0
+}
+
+.cardFundador .nomeFundador {
+    @apply text-amber-300 font-inter text-[14pt] font-bold
+}
+
+.cardFundador .cargoFundador {
+    @apply font-ibm py-1.5 font-bold text-gray-400
+}
+
+.cardFundador .bioFundador {
+    @apply text-white font-inter font-light px-6
+}
+
+.efeitoLuz {
+    @apply absolute h-52 w-52 rounded-[50%] -top-30 blur-xl opacity-70 -right-14;
+    background: radial-gradient(circle, rgba(255, 210, 48, .8) 0%, rgba(255, 210, 48, 0) 70%);
+}
+
+.efeitoLuzDepoimentos {
+    @apply absolute h-52 w-52 rounded-[50%] -bottom-14 blur-xl opacity-70 -right-32;
+    background: radial-gradient(circle, rgba(255, 210, 48, .8) 0%, rgba(255, 210, 48, 0) 70%);
+}
+
+.efeitoLuzFooter {
+    @apply absolute h-52 w-52 rounded-[50%] -top-30 blur-xl opacity-70 -left-20;
+    background: radial-gradient(circle, rgba(255, 210, 48, .8) 0%, rgba(255, 210, 48, 0) 70%);
+}
+
+.contetorCardDepoimentos {
+    @apply flex gap-4 overflow-x-auto px-4 py-2 scroll-smooth snap-x snap-mandatory;
+}
+
+.cardDepoimento {
+    @apply border-2 border-amber-300 p-2.5 rounded-lg flex-shrink-0 w-[85%] sm:w-2/3 md:w-1/2 lg:w-1/4 snap-start transition-transform duration-200 ease-in scale-95 cursor-pointer hover:border-amber-200;
+}
+
+.contetorCardDepoimentos::-webkit-scrollbar {
+    @apply h-2 bg-transparent
+}
+
+.contetorCardDepoimentos::-webkit-scrollbar-track {
+    @apply bg-transparent rounded-[10px]
+}
+
+.contetorCardDepoimentos::-webkit-scrollbar-thumb {
+    @apply bg-amber-300 rounded-[10px] shadow-[0_0_14px_#FFD230] cursor-pointer
+}
+
+.divImgSimboloDepoimento img {
+    @apply w-8
+}
+
+.divTextoDepoimento {
+    @apply py-1.5 font-inter text-white font-extralight text-[11pt]
+}
+
+.divImgClienteDepoimento img {
+    @apply w-9 h-9 rounded-full
+}
+
+.divContentImgNomeProfCliente {
+    @apply flex items-center justify-between
+}
+
+.divNomeClienteDepoimento {
+    @apply font-inter text-amber-300 font-extrabold text-[11pt]
+}
+
+.divProfissaoClienteDepoimento {
+    @apply font-inter text-gray-400 font-bold text-[10pt]
+}
+
+.linksRodape {
+    @apply text-gray-400 hover:underline
+}
+
+.linksRodapeSocial {
+    @apply text-[15pt] text-gray-400 hover:text-amber-300 transition-all duration-300 ease-linear
+}
+
+.fa-arrow-up {
+    animation: elevacao 1s infinite;
+    
+}
+
+@keyframes elevacao {
+    to {
+        top: 10px;
+    }
+
+    from {
+        top: 0;
+    }
+}
+
+.form {
+    @apply hidden flex-col border-2 border-[#2E2C2C] p-2 h-[85vh] relative overflow-hidden justify-center items-center lg:border-none 
+}
+
+.navContentTituloForm {
+    @apply sm:flex justify-center
+}
+
+.tituloTextoForm {
+    @apply font-inter font-light text-[12pt] text-white text-center sm:text-[15pt] sm:w-[63%]
+}
+
+.formCriarConta.ativo {
+    @apply flex
+}
+
+.formAcessarConta.ativo {
+    @apply flex
+}
+
+.contentorNavInputs {
+    @apply sm:flex sm:gap-3 lg:flex-wrap lg:flex lg:items-center justify-center
+}
+
+.navInputsContent {
+    @apply flex flex-col text-white items-center relative my-2 sm:items-start lg:flex-wrap
+}
+
+.navInputsContent input {
+    @apply border-2 border-[#2E2C2C] outline-0 w-64 px-2 py-0.5 font-inter not-placeholder-shown:border-2 not-placeholder-shown:border-amber-300 hover:border-2 hover:border-amber-300 focus:border-2 focus:border-amber-300 transition-all duration-300 ease-linear
+}
+
+.navInputsContent input:focus + label ,
+.navInputsContent input:not(:placeholder-shown) + label {
+    @apply text-amber-300 -top-2 text-[9pt]
+}
+
+.navInputsContent label {
+    @apply absolute top-1 left-3 font-inter font-bold text-[11pt] text-gray-500 bg-[#151515] px-0.5 transition-all duration-300 ease-linear
+}
+
+.navInputsContent small {
+    @apply text-gray-500 font-ibm text-[8pt] font-semibold
+}
+
+.botaoTrocarForms {
+    @apply text-white font-ibm pt-2 text-[11pt] cursor-pointer hover:underline active:underline
+}
+
+.efeitoCirculoForm {
+    @apply w-5 h-5 bg-amber-300 rounded-full m-2.5 absolute shadow-[0_0_12px_#FFD230] z-10 hover:scale-110 cursor-pointer
+}
+
+.efeitoCirculoForm1 {
+    @apply top-0 -right-1
+}
+
+.efeitoCirculoForm2 {
+    @apply bottom-0 -left-1
+}
+
+.efeitoLuzForm {
+    @apply absolute h-52 w-full rounded-[50%] -bottom-30 blur-xl opacity-60 -right-14;
+    background: radial-gradient(circle, rgba(255, 210, 48, .8) 0%, rgba(255, 210, 48, 0) 70%);
+}
+
+.navBotoesForms {
+    @apply bg-[#212121] w-max p-1 rounded-full border border-[#2e2c2c] z-20
+}
+
+.paragrafoFinalForm {
+    @apply text-white font-inter text-[10pt] font-light sm:text-center
+}

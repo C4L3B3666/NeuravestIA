@@ -1,11 +1,728 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-AO" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:type" content="website">
+    <meta name="theme-color" content="#ffde59">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Neuravest Inc.">
+    <meta name="googlebot" content="index, follow">
+    <title>Neuravest | Investimentos com IA.</title>
+    <script src="assets/js/script.js" defer></script>
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="stylesheet" href="assets/css/output.css">
+    <link rel="canonical" href="https://www.neuravest.com">
+    <meta property="og:url" content="https://www.neuravest.com">
+    <link rel="shortcut icon" href="assets/img/logo.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta property="og:title" content="Neuravest - Investimentos inteligentes e lucrativos usando o poder das IAs">
+    <meta name="keywords" content="neuravest, neuravestangola, investimentos, site de investimentos, ganhar dinheiro, ia angola, investimentos em Angola">
+    <meta property="og:description" content="O Neuravest usa IA e estatísticas avançadas para identificar investimentos eficientes e escaláveis precisão.">
+    <meta name="description" content="Neuravest é uma plataforma de investimentos inteligente que usa algoritmos de IA avançada para otimizar sua carteira de investimentos">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <noscript>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    </noscript>
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          "name": "Neuravest",
+          "url": "https://www.neuravest.com",
+          "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://www.neuravest.com/search?q={search_term_string}",
+            "query-input": "required name=search_term_string"
+          }
+        }
+    </script>
 </head>
-<body>
-    <h1>Hello GitHub</h1>
+<body class="overflow-x-hidden bg-[#151515] scroll-smooth">
+    <header class="flex items-center justify-between px-6 h-16 transition duration-300 ease-in backdrop-blur-xs w-screen fixed py-2.5 bg-[#15151585] z-[100]">
+
+        <nav class="z-[3]">
+            <a href="./"><img src="assets/img/logo_texto.png" alt="imagem da logo da neuravest" srcset="" class="w-32" draggable="false"></a>
+        </nav>
+
+        <nav class="absolute flex items-center flex-col bg-[#151515] text-white top-0 w-screen right-0 h-screen justify-around text-center font-inter translate-x-full transition-all duration-300 ease-in pt-7 lg:translate-0 lg:sticky lg:flex-row lg:h-auto lg:w-max lg:pt-0 lg:justify-center lg:gap-3 lg:bg-transparent">
+            <a href="#" class="linkMenu">Página Inicial</a>
+            <a href="#" class="linkMenu">Como Funciona?</a>
+            <a href="#" class="linkMenu">Planos e Retornos</a>
+            <a href="#" class="linkMenu">Nossos Parceiros</a>
+            <a href="#" class="linkMenu">Quem Somos?</a>
+            <a href="#" class="linkMenu lg:hidden"><button class="btn">Investir - fácil e rápido <i class="fa-solid fa-piggy-bank text-[14pt] text-[#151515]"></i></button></a>
+        </nav>
+
+        <nav class="relative left-3 sm:left-32 lg:hidden">
+            <a href="#"><button class="btn">Ative sua Riqueza <i class="fa-solid fa-bolt"></i></button></a>
+        </nav>
+
+        <nav class="hidden lg:flex lg:gap-1.5">
+            <a href="#"><button class="btn btnPrimario">Fale Connosco</button></a>
+            <a href="#"><button class="btn">Investir - fácil e rápido <i class="fa-solid fa-piggy-bank"></i></button></a>
+        </nav>
+
+        <nav class="navMenuHamburguer lg:hidden">
+            <div class="linha"></div>
+            <div class="linha linha2"></div>
+            <div class="linha linha3"></div>
+        </nav>
+    </header>
+
+    <main class="px-4 bg-[#151515] sm:px-16">
+
+        <section class="h-max flex items-center flex-col pt-24 text-center text-white lg:flex-row lg:text-left lg:justify-between">
+            <div class="lg:w-1/2">
+                <h1 class="font-inter text-3xl font-extrabold uppercase"><span class="textoColorido">Neuravest.</span>: Sua <span class="textoColorido">riqueza</span> sob o poder da <span class="textoColorido">inteligência artificial.</span></h1>
+                <p class="font-inter font-light py-4">Com lucros de até <span class="textoColoridoBold">2,14% ao mês</span> e <span class="textoColoridoBold">25,7% ao ano!</span> A <span class="textoColoridoBold text-shadow-2xs">Neuravest.</span> combina algoritmos avançados e tecnologia de ponta para identificar as melhores oportunidades para proteger e multiplicar o seu dinheiro. Descubra como a <span class="textoBold"><span class="textoColorido">NeuraIA.</span> pode multiplicar o seu dinheiro de forma inteligente e segura!</span></p>
+                <div class="py-3.5">
+                    <a href="views/form.html"><button class="btn hover:scale-105 transition-transform duration-300 ease-linear">Desperte Sua Riqueza Agora com a <span class="font-bold">NeuraIA</span>  <i class="fa-solid fa-bolt text-[#151515]"></i></button></a>
+                    <a href="#" class="hidden"><button class="btn btnPrimario">Saber Mais</button></a>
+                </div>
+            </div>
+            <div>
+                <img src="assets/img/bg_hero.png" alt="imagem principal da hero - uma mulher humanoide" srcset="" draggable="false">
+            </div>
+        </section>
+
+        <section>
+            <div class="navContentorTextosLaterais">
+                <div>
+                    <h1 class="tituloSecao">os números que <span class="textoColorido animate-pulse">falam</span> por si.</h1>
+                    <p class="textoSecao">Cada <span class="textoColoridoBold">número</span> aqui conta uma história de <span class="textoBold">segurança, estratégia</span> e <span class="textoBold">crescimento.</span> <span class="textoColoridoBold">Bem-vindo ao futuro dos investimentos.</span></p>
+                </div>
+                <div class="divSecaoLateral">
+                    <p class="textoLateralSecao">
+                        Na Neuravest, não dependemos de promessas vazias, mas de dados concretos e resultados comprovados. Cada percentagem de lucro, cada transação executada, cada dia de funcionamento da NeuraIA. é uma prova irrefutável do poder que entregamos.
+                    </p>
+                </div>
+            </div>
+            <div class="carousel-container relative flex m-auto items-center w-[205px] justify-center lg:w-full">
+                <button class="carousel-button prev" aria-label="Anterior">&#10094;</button>
+                <div class="flex items-center overflow-x-auto scroll-smooth snap-x snap-mandatory hide-scrollbar" style="-webkit-overflow-scrolling: touch;">
+
+                    <div class="divDadosEstatisticos">
+                        <h4>Capital sob Gestão</h4>
+                        <p>21.371.905,38</p>
+                        <small>Total investido (KZs)</small>
+                    </div>
+
+                    <div class="divDadosEstatisticos">
+                        <h4>Investidores de Elite</h4>
+                        <p>3.493</p>
+                        <small>Membros ativos</small>
+                    </div>
+
+                    <div class="divDadosEstatisticos">
+                        <h4>Solicitações Rejeitadas</h4>
+                        <p>1.382</p>
+                        <small>Investimentos recusados</small>
+                    </div>
+
+                    <div class="divDadosEstatisticos">
+                        <h4>Investimento Recordista</h4>
+                        <p>12.500.000</p>
+                        <small>Maior aporte (KZs)</small>
+                    </div>
+                </div>
+                <button class="carousel-button next" aria-label="Próximo">&#10095;</button>
+            </div>
+        </section>
+
+        <section class="flex items-center justify-around gap-1.5 flex-col pt-8">
+            <div class="navContentorTextosLaterais">
+                <div>
+                    <h1 class="tituloSecao">as empresas que acreditam na <span class="textoColorido animate-pulse">Neuravest.</span></h1>
+                    <p class="textoSecao">Na <span class="textoColoridoBold">Neuravest.</span>, <span class="textoBold">não operamos sozinhos</span>; unimos forças com um ecossistema financeiro de elite. Nossa <span class="textoBold">rede exclusiva</span> é formada por <span class="textoBold">empresas respeitadas</span>, tanto a nível nacional quanto internacional, especialistas em commodities algorítmicas, investimentos precisos e inteligência artificial. Essa colaboração permite entregar resultados consistentes, seguros e, acima de tudo, sustentáveis para cada investidor que confia em nós. <span class="textoBold">Faça parte do movimento que está a revolucionar o futuro financeiro de Angola!</span></p>
+                </div>
+                <div class="divSecaoLateral">
+                    <p class="textoLateralSecao">
+                        Essas alianças estratégicas nos permitem aceder aos melhores talentos, às plataformas mais seguras e às informações mais privilegiadas do mercado. É por isso que podemos garantir a você uma experiência de investimento sem igual, onde o seu capital é otimizado por uma rede de especialistas e pela IA mais avançada. Junte-se à Neuravest e beneficie da força de uma rede que está a moldar o amanhã.
+                    </p>
+                </div>
+            </div>
+            <div class="relative fade-edge">
+                <div class="flex w-max animate-scroll gap-10 px-4 grayscale-100">
+                    <img src="assets/img/hes.png" alt="" class="imgParceiros" draggable="false">
+                    <img src="assets/img/unitel_money.png" alt="" class="imgParceiros" draggable="false">
+                    <img src="assets/img/clc.png" alt="" class="imgParceiros" draggable="false">
+                    <img src="assets/img/emis.png" alt="" class="imgParceiros"  draggable="false">
+                    <img src="assets/img/binance.png" alt="" class="imgParceiros" draggable="false">
+                    <img src="assets/img/777py.png" alt="" class="imgParceiros" draggable="false">
+                    <img src="assets/img/paypay.png" alt="" class="imgParceiros" draggable="false">
+
+                    <img src="assets/img/hes.png" alt="" class="imgParceiros" draggable="false">
+                    <img src="assets/img/unitel_money.png" alt="" class="imgParceiros" draggable="false">
+                    <img src="assets/img/clc.png" alt="" class="imgParceiros" draggable="false">
+                    <img src="assets/img/emis.png" alt="" class="imgParceiros"  draggable="false">
+                    <img src="assets/img/binance.png" alt="" class="imgParceiros" draggable="false">
+                    <img src="assets/img/777py.png" alt="" class="imgParceiros" draggable="false">
+                    <img src="assets/img/paypay.png" alt="" class="imgParceiros" draggable="false">
+                </div>
+            </div>
+        </section>
+
+        <section class="py-2.5 lg:flex lg:items-center lg:justify-center">
+            <p class="textosGrandeDestaque">Você está ativando uma <span class="textoGradiente">IA</span> criada para <span class="textoGradiente">proteger</span>, <span class="textoGradiente">multiplicar e <span class="textoGradiente">evoluir</span> com você.</p>
+        </section>
+              
+        <section class="py-7">
+            <div class="navContentorTextosLaterais">
+                <div>
+                    <h1 class="tituloSecao">seu dinheiro merece inteligência: a <span class="textoColorido animate-pulse">neuraia.</span> trabalha enquanto você <span class="textoColorido animate-pulse">dorme.</span></h1>
+                    <p class="textoSecao">Investir na <span class="textoColoridoBold">Neuravest.</span> é abrir portas para um novo patamar financeiro. Com apenas <span class="textoBold">3 passos simples</span>, você ativa um <span class="textoBold">sistema inteligente</span> que trabalha incasavelmente para o seu crescimento. <span class="textoColoridoBold">Exclusivo, automatizado, seguro, tecnológico e sem burocracia.</span></p>
+                </div>
+                <div class="divSecaoLateral">
+                    <p class="textoLateralSecao">
+                        Esqueça a burocracia, os processos lentos e as incertezas. Aqui, você encontra um caminho exclusivo, moderno, seguro e acessível para transformar sua relação com o dinheiro. Nossa tecnologia trabalha incansavelmente por você — analisando dados, identificando oportunidades e protegendo seu capital com precisão. Mudar o teu futuro financeiro depende de você.
+                    </p>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="flex flex-col items-center justify-center">
+                <div class="border-2 border-[#2E2C2C] rounded-full flex justify-around p-1 shadow-[0_0_12px_#2E2C2C] bg-[#151515] w-full sm:w-3/4 md:w-4/6 lg:w-1/3">
+                    <button class="btnMostarPassoInvestimento ativo">Identificação</button>
+                    <button class="btnMostarPassoInvestimento">Alimente sua IA</button>
+                    <button class="btnMostarPassoInvestimento">Hora da riqueza</button>
+                </div>
+
+                <div>
+
+                    <div class="contentCardComoInvestir" id="secaoIdentificacao">
+                        <h6 class="tituloPrincipalComoInvestir">Torne-se membro exclusivo da elite <span class="textoColoridoBold">Neuravest.</span></h6>
+                        <p class="textoPrincipalComoInvestir">O <span class="textoBold">primeiro passo</span> para sua riqueza é entrar para a elite da <span class="textoColoridoBold">Neuravest.</span> Crie sua conta <span class="textoColoridoBold">NeuraConta</span> em segundos e desbloqueie acesso a uma <span class="textoBold">oportunidade única</span> em Angola.</p>
+
+                        <div class="cardComoInvestir">
+                            <div class="primeiraDivComoInvestir">
+                                <div class="iconeComoInvestir"><i class="fa-solid fa-fingerprint"></i></div>
+                                <div class="textoPassoComoInvestir">Ative sua NeuraConta.</div>
+                            </div>
+                            <div class="segundaDivComoInvestir">
+                                <p class="textoComoInvestir">Em menos de <span class="textoBold">2 minutos</span> crie a sua conta segura e exclusiva na <span class="textoColoridoBold">NEURAVEST.</span> e desbloqueie acesso a uma oportunidade única e exclusiva. Existem <span class="textoBold">centenas de investidores</span> na nossa comunidade, comece, antes que <span class="textoBold">REJEIÇÕES</span> se acumulem.</span></p>
+                            </div>
+                            <div></div>
+
+                        </div>
+                    </div>
+                    
+                    <div class="contentCardComoInvestir" id="secaoPagamento">
+                        <h6 class="tituloPrincipalComoInvestir">Seu dinheiro merece <span class="textoColoridoBold">rotas exclusivas</span>. escolha sua <span class="textoColoridoBold">chave</span> para riqueza</h6>
+                        <p class="textoPrincipalComoInvestir">O <span class="textoColoridoBold">mínimo</span> para investir é de <span class="textoColoridoBold">15.000KZs</span> <span class="textoBold">(equivalente a um ténis novo)</span> e você pode fazê-lo com métodos seguros e familiares, pensado para todos os angolanos. <span class="textoColoridoBold">Alimente sua IA</span> via <span>ATM</span>, <span class="textoBold">Multicaixa Express</span>, <span class="textoBold">Unitel Money</span> ou, em breve, com os nossos <span class="textoBold">NeuraAgentes.</span> <span class="textoBold">Investir na <span class="textoColorido">Neura.</span> é simples e inteligente.</span> </p>
+                        
+                        <div class="cardComoInvestir">
+                            <div class="primeiraDivComoInvestir">
+                                <div class="iconeComoInvestir"><i class="fa-solid fa-money-bill-transfer"></i></div>
+                                <div class="textoPassoComoInvestir">Transferência Bancária (IBAN)</div>
+                            </div>
+                            <div class="segundaDivComoInvestir">
+                                <p class="textoComoInvestir">Realize uma <span class="textoColoridoBold">transferência bancária</span> diretamente para o nosso fundo financeiro através do seu banco de preferência. É rápido, seguro, confiável e total controle do processo! <span class="textoBold">Sua riqueza começa com um passo sólido</span> - a sua riqueza começa aqui, na <span class="textoColoridoBold">Neuravest.</span></p>
+                            </div>
+                            <div></div>
+                        </div>
+                        
+                        <div class="cardComoInvestir">
+                            <div class="primeiraDivComoInvestir">
+                                <div class="iconeComoInvestir"><i class="fa-solid fa-mobile-screen-button"></i></div>
+                                <div class="textoPassoComoInvestir">Multicaixa Express ou Unitel Money</div>
+                            </div>
+                            <div class="segundaDivComoInvestir">
+                                <p class="textoComoInvestir">Use a praticidade do seu telemóvel para investir utilizando a <span class="textoColoridoBold">app Multicaixa Express</span> ou o serviço <span class="textoColoridoBold">Unitel Money!</span> Você poderá fazê-lo utilizando o número (referência) <span class="textoBold">999 111 000 para o MCX Express</span> e o número <span class="textoBold">999 000 111 para o Unitel Money</span>. Esse é um dos métodos mais conhecidos, rápidos e amplamente utilizado em Angola.</p>
+                            </div>
+                            <div></div>
+                        </div>
+                        
+                        <div class="cardComoInvestir">
+                            <div class="primeiraDivComoInvestir">
+                                <div class="iconeComoInvestir"><i class="fa-solid fa-mobile-screen-button"></i></div>
+                                <div class="textoPassoComoInvestir">NeuraAgentes (Brevemente)</div>
+                            </div>
+                            <div class="segundaDivComoInvestir">
+                                <p class="textoComoInvestir">Estamos espalhando uma rede <span class="textoColoridoBold">NeuraAgentes.</span> oficiais e exclusivos por toda a Angola para facilitar o acesso à <span class="textoColoridoBold">Neuravest.</span>, oferecer suporte personalizado para o seu investimento e qualquer aspecto relacionado a <span class="textoColoridoBold">Neuravest.</span>. <span class="textoBold">Aguarde por essa grande novidade!</span></p>
+                            </div>
+                            <div></div>
+                        </div>
+
+                    </div>
+
+                    <div class="contentCardComoInvestir" id="horaRiqueza">
+                        <h6 class="tituloPrincipalComoInvestir">Veja o seu <span class="textoColoridoBold">dinheiro</span> crescer com a nossa <span class="textoColoridoBold">IA.</span></h6>
+                        <p class="textoPrincipalComoInvestir">Com a <span class="textoColoridoBold">conta ativa</span> e a <span class="textoColoridoBold">sua IA alimentada</span>, a <span class="textoColoridoBold">NeuraIA.</span> começa a trabalhar por você, o <span class="textoBold">seu dinheiro começará a trabalhar para você.</span> O próximo passo? Acompanhar os seus lucros <span class="textoBold">e ver a sua riqueza crescer dia após dia.</span></p>
+                        <div class="cardComoInvestir">
+                            <div class="primeiraDivComoInvestir">
+                                <div class="iconeComoInvestir"><i class="fa-solid fa-robot"></i></div>
+                                <div class="textoPassoComoInvestir">Veja a nossa IA trabalhar.</div>
+                            </div>
+                            <div class="segundaDivComoInvestir">
+                                <p class="textoComoInvestir">Após a ativação da sua conta e o investimento confirmado a <span class="textoColoridoBold">NeuraIA.</span> começa a trabalhar e a <span class="textoColoridoBold">sua riqueza cresce enquanto você dorme, viaja</span> ou <span class="textoColoridoBold">se diverte</span>, a nossa <span class="textoBold">IA executa milhares de operações para garantir o seu retorno</span> e rentabilida com segurança e inteligência algorítmica.</p>
+                            </div>
+                            <div></div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="flex flex-col items-center justify-center lg:flex-row">
+            <nav class="lg:flex lg:items-center lg:justify-center">
+                <p class="textosGrandeDestaquex">Onde a <span class="textoGradiente">inteligência</span> se transforma em rentabilidade.</p>
+            </nav>
+            <nav class="pb-2.5">
+                <img src="assets/img/img_section.png" alt="imagem da edição do telefone" srcset="" draggable="false" class="sm:w-[400px] lg:w-[900px]">
+            </nav>
+        </section>
+
+        <section class="max-h-[650px] sm:max-h-[590px] overflow-hidden fade-mask" id="expandableSection">
+            <div class="navContentorTextosLaterais">
+                <div>
+                    <h1 class="tituloSecao"><span class="textoColorido">transparência</span> inteligente: tire as suas <span class="textoColorido animate-pulse">dúvidas</span> com <span class="textoColorido animate-pulse">clareza</span></h1>
+                    <p class="textoSecao">Na <span class="textoColoridoBold">Neuravest.</span> <span class="textoBold">priorizamos</span> a <span class="textoBold">clareza</span>, <span class="textoBold">transparência</span> e <span class="textoBold">segurança</span> - e isso se constrói com informação clara e acessível. Por isso, reunimos abaixo as <span class="textoColoridoBold">perguntas mais frequentes</span> sobre o nosso modelo de IA e aspectos do da <span class="textoColoridoBold">Neuravest.</span> Se ainda tiver dúvidas, saber outros aspectos da <span class="textoColoridoBold">Neura.</span> ou a sua dúvida não esteja na área abaixo, <span class="textoBold">nossa equipe está pronta para responder todas as questões</span> e fornecer o suporte necessário - <span class="textoColoridoBold">porque você merece saber onde está investindo</span></p>
+                </div>
+                <div class="divSecaoLateral">
+                    <p class="textoLateralSecao">
+                        No entanto, naturalmente, entendemos que cada usuário tem necessidades específicas. E, estamos sempre prontos para ajudar você, caso a sua dúvida não esteja na área abaixo ou deseja saber mais sobre nosso projeto, nossa pesquisa ou qualquer outro aspecto do 777, não hesite e entre em contato connosco pelos canais oficiais que você preferir.
+                    </p>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="flex flex-col items-center justify-center">
+
+                <div class="acordeao">
+                    <div class="acordeaoQuestao">
+                        <h5>como aumentar o meu dinheiro de verdade?</h5>
+                        <i class="fa-solid fa-circle-check checkAcordeao"></i>
+                    </div>
+                    <hr class="hr1">
+                    <div class="acordeaoResposta">
+                        <p>O segredo-chave dos especialistas está no tempo. Os resultados mais consistentes e expressivos vêm quando o capital é deixado "repousar". Ao manter o teu investimento por meses a NeuraIA. reiveste automaticamente o lucro gerado. Significa que no próximo ciclo a nossa IA terá uma base maior para trabalhar, gerando ainda mais lucros para trabalhar. Dê grandeza ao seu dinheiro, dê ao seu dinheiro o tempo que ele merece para atingir o seu potencial máximo.</p>
+                    </div>
+                </div>
+
+                <div class="acordeao">
+                    <div class="acordeaoQuestao">
+                        <h5>Existe valor mínimo para investir?</h5>
+                        <i class="fa-solid fa-circle-check checkAcordeao"></i>
+                    </div>
+                    <hr class="hr1">
+                    <div class="acordeaoResposta">
+                        <p>A nossa missão é garantir acesso a tecnologia a pessoa de qualquer classe social. Por isso, o valor mínimo para investir na Neuravest. são 15.000KZS. Nosso objetivo é permitir que qualquer pessoa tenha conexão a uma forma moderna e inteligente de crescimento financeiro inteligente.</p>
+                    </div>
+                </div>
+
+                <div class="acordeao">
+                    <div class="acordeaoQuestao">
+                        <h5>Existe valor máximo para investir?</h5>
+                        <i class="fa-solid fa-circle-check checkAcordeao"></i>
+                    </div>
+                    <hr class="hr1">
+                    <div class="acordeaoResposta">
+                        <p>Não há limites! Você é livre de investir o quanto quiser, nossa equipe poderá fornecer consultores financeiros a investidores que pretendem investir valores iguais ou superiores a 50 milhões de Kzs.</p>
+                    </div>
+                </div>
+
+                <div class="acordeao">
+                    <div class="acordeaoQuestao">
+                        <h5>Quanto é o lucro mensal?</h5>
+                        <i class="fa-solid fa-circle-check checkAcordeao"></i>
+                    </div>
+                    <hr class="hr1">
+                    <div class="acordeaoResposta">
+                        <p>Os lucros são de 2,14% ao mês. Em períodos mais favoráveis os retornos poderão variar alcançar 4% ao mês.</p>
+                    </div>
+                </div>
+
+                <div class="acordeao">
+                    <div class="acordeaoQuestao">
+                        <h5>A Neura. é legal e regulada?</h5>
+                        <i class="fa-solid fa-circle-check checkAcordeao"></i>
+                    </div>
+                    <hr class="hr1">
+                    <div class="acordeaoResposta">
+                        <p>Entendemos a importância de confiar no seu parceiro de investimentos. Somos uma startup com base tecnológica com modelo flexível e descentralizada. Mas, somos reguladas e atuamos com instituições financeiras, nacionais e internacionais, renomadas e respeitadas. Operamos com contas no Banco de Comércio de Indústria (BCI) e seguimos diretrizes da Binance e Quantum Corps Investiments. Sua confiança é a nossa prioridade.</p>
+                    </div>
+                </div>
+                
+                <div class="acordeao">
+                    <div class="acordeaoQuestao">
+                        <h5>Como a NeuraIA. gera o lucro?</h5>
+                        <i class="fa-solid fa-circle-check checkAcordeao"></i>
+                    </div>
+                    <hr class="hr1">
+                    <div class="acordeaoResposta">
+                        <p>Os lucros são gerados através da combinação exclusiva de algoritmos de inteligência artificial, análises preditivas e estratégias de diversificação em múltiplos mercados. Nosso algoritmo analisa centenas de dados em tempo real, identificando as melhores oportunidades de investimentos com base nos padrões históricos. indicadores técnicos e análises preditivas.</p>
+                    </div>
+                </div>
+
+                <div class="acordeao">
+                    <div class="acordeaoQuestao">
+                        <h5>Por que a Neuravest. rejeita alguns investimentos?</h5>
+                        <i class="fa-solid fa-circle-check checkAcordeao"></i>
+                    </div>
+                    <hr class="hr1">
+                    <div class="acordeaoResposta">
+                        <p> Na Neuravest, qualidade e alinhamento vêm antes da quantidade. Não aceitamos todos os investimentos — mesmo valores altos — porque nossa prioridade é construir uma comunidade sólida, ética e alinhada à nossa visão. Rejeitamos, em média, 193 propostas por mês. Os principais motivos incluem:
+                            <ul>
+                                <li>Investimentos abaixo do mínimo exigido (15.000 KZs);</li>
+                                <li>Valores muito elevados (+50 milhões KZs) sem comprovação da origem;</li>
+                                <li>Investidores ligados a atividades ilegais, como terrorismo ou lavagem de dinheiro;</li>
+                                <li>Limite mensal de 20 investidores atingido — priorizamos a qualidade operacional.</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="acordeao">
+                    <div class="acordeaoQuestao">
+                        <h5>O lucro é garantido todos os meses?</h5>
+                        <i class="fa-solid fa-circle-check checkAcordeao"></i>
+                    </div>
+                    <hr class="hr1">
+                    <div class="acordeaoResposta">
+                        <p>Nosso rendimento não é legalmente garantido, pois o mercado financeiro naturalmente envolve riscos e falhas. No entanto, o nossos sistemas foram projetados para manter estabilidade dos ganhos ao longo do tempo, mesmo em períodos de maior volatilidade ou crise. Temos um histórico sólido de consistências.</p>
+                    </div>
+                </div>
+
+                <div class="acordeao">
+                    <div class="acordeaoQuestao">
+                        <h5>Como o dados dos investidores são protegidos?</h5>
+                        <i class="fa-solid fa-circle-check checkAcordeao"></i>
+                    </div>
+                    <hr class="hr1">
+                    <div class="acordeaoResposta">
+                        <p>A proteção dos seus dados é prioridade absoluta. Utilizamos tecnologia de criptografia (AES-256), usadas em várias instituições de renome, para garantir que suas informações pessoais, como nome, e-mail, telefone e IBAN, estejam seguras contra acessos não autorizados. Seguimos padrões internacionais de segurança da informação e adotamos boas práticas de conformidade para garantir a confidencialidade, integridade e disponibilidade dos dados.</p>
+                    </div>
+                </div>
+
+                <div class="acordeao">
+                    <div class="acordeaoQuestao">
+                        <h5>Onde o meu dinheiro é investido?</h5>
+                        <i class="fa-solid fa-circle-check checkAcordeao"></i>
+                    </div>
+                    <hr class="hr1">
+                    <div class="acordeaoResposta">
+                        <p>O seu dinheiro é aplicado em estratégias quantitativas diversificadas em ativos de mercados finaceiros ativos, mercados internacionais (LSE e NYSE), commodities, tecnologias disruptivas, criptomoedas selecionadas com foco em mercados internacionais. Parte do capital também é usado para apoiar inovações em Angola, como startups e em atividades humanitárias e solidárias. Tudo feito com transparência, e você poderá acompanhar o progresso no seu painel de negócios após o cadastro.</p>
+                    </div>
+                </div>
+
+                <div class="acordeao">
+                    <div class="acordeaoQuestao">
+                        <h5>Posso sacar quando quiser?</h5>
+                        <i class="fa-solid fa-circle-check checkAcordeao"></i>
+                    </div>
+                    <hr class="hr1">
+                    <div class="acordeaoResposta">
+                        <p>Sim! Nossos investidores podem solicitar saques quando quiser, através da sua NeuraConta ou nossos NeuraAgentes. Os processamentos são feitos geralmente em até 4 a 7 dias úteis para a sua conta bancária registrada, via Unitel Money ou Multicaixa Express, dependendo da sua preferência.A NeuraEquipe está sempre disponível para auxiliar em qualquer etapa garantindo que os seus saques sejam tão fáceis quanto investir.</p>
+                    </div>
+                </div>
+
+                <div class="acordeao">
+                    <div class="acordeaoQuestao">
+                        <h5>Quais exchanges a Neurainvest. usa?</h5>
+                        <i class="fa-solid fa-circle-check checkAcordeao"></i>
+                    </div>
+                    <hr class="hr1">
+                    <div class="acordeaoResposta">
+                        <p>Apesar da nossa IA operar de maneira agnóstica em relação a plataformas, a Neurainvest. poussui vinculos com algumas exchanges como a nossas parceiras e mentoras (Binance e Quantum Corps Investiments) para segurança e Luno Africa (com foco em mercados emergentes).  </p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section>
+            <div class="flex items-center justify-center py-3.5">
+                <button class="btn" id="expandButton">Explorar Todas as Questões</button>
+            </div>
+        </section>
+
+        <section class="py-2.5">
+             <div class="navContentorTextosLaterais">
+                <div>
+                    <h1 class="tituloSecao">saiba <span class="textoColoridoBold animate-pulse">quem somos</span> e descubra <span class="textoColoridoBold animate-pulse">sobre a ia</span> que multiplica o seu dinheiro<span class="textoColoridoBold animate-pulse">.</span></h1>
+                    <p class="textoSecao">A nossa IA, a <span class="textoColoridoBold">NeuraIA.</span>, <span class="textoColoridoBold">processa milhares de pontos de dados financeiros por minuto</span>. Ela foi desenvolvida com <span class="textoBold">linguagem de programação R</span> e <span class="textoBold">biblioteca/framework TensorFlow</span>.A <span class="textoColoridoBold">NeuraIA.</span> não apenas analisa, ela utiliza também algoritmos de aprendizado para prever movimentos futuros com precisão que desafiam as análises humanas tradicionais, a nossa IA é <span class="textoColoridoBold">treinada para detetar padrões de mercados complexos e anomalias lucrativas</span> que passariam despercebidos ao olho humano... clique <a class="underline textoBold">aqui</a> para baixar o nosso documento é descobrir mais sobre a <span class="textoColoridoBold">NeuraIA.</span></p>
+                </div>
+                <div class="divSecaoLateral">
+                    <p class="textoLateralSecao">
+                        Diferente das análises humanas tradicionais, a NeuraIA. prevê movimentos de mercado com alto nível de precisão, detecta padrões complexos e identifica anomalias lucrativas que passariam despercebidas ao olhar humano. Ela está sempre aprendendo, sempre evoluindo — e o melhor: trabalhando incansavelmente por você
+                    </p>
+                </div>
+            </div>
+
+            <hr>
+
+            <h3 class="uppercase font-ibm text-gray-400 font-extrabold text-[13pt] text-center">Conheça a <span class="textoColorido">NeuraEquipe.</span></h3>
+            
+            <div class="flex flex-col items-center justify-center">
+
+                <div class="cardFundador">
+                    <div>
+                        <img src="assets/img/founder.png" alt="" srcset="" class="imagemFundador" draggable="false">
+                    </div>
+                    <div>
+                        <h5 class="nomeFundador">Neurania F. Makiesse</h5>
+                        <h5 class="cargoFundador">Diretora Executiva (CEO) e fundadora</h5>
+                        <p class="bioFundador">Acredito que todos merecem uma chance justa de crescer financeiramente. Criamos uma ponte entre Angola e o futuro dos investimentos inteligentes e acessíveis</p>
+                    </div>
+                </div>
+
+                <div class="cardFundador">
+                    <div>
+                        <img src="assets/img/founder1.png" alt="" srcset="" class="imagemFundador" draggable="false">
+                    </div>
+                    <div>
+                        <h5 class="nomeFundador">Edson Mavungo</h5>
+                        <h5 class="cargoFundador">Diretor Tecnológico (CTO) e co-fundador</h5>
+                        <p class="bioFundador">A tecnologia só faz sentido quando facilita a vida das pessoas e aproxima sonhos da realidade e na Neura estamos todos comprometidos com isso. É a nossa NeuraMissão!</p>
+                    </div>
+                </div>
+
+                <div class="cardFundador">
+                    <div>
+                        <img src="assets/img/founderx.png" alt="" srcset="" class="imagemFundador" draggable="false">
+                    </div>
+                    <div>
+                        <h5 class="nomeFundador">Nala</h5>
+                        <h5 class="cargoFundador">Diretora Financeira (CFO) e Diretora dos Recursos Humanos (CHRO)</h5>
+                        <p class="bioFundador">Cuidar das finanças da Neura. é, para mim, cuidar do futuro de cada investidor que confia na em nós. Cada investimento precisa ter equilíbrio perfeito entre risco e oportunidade de crescimento.</p>
+                    </div>
+                </div>
+
+                <div class="cardFundador">
+                    <div>
+                        <img src="assets/img/founder2.png" alt="" srcset="" class="imagemFundador" draggable="false">
+                    </div>
+                    <div>
+                        <h5 class="nomeFundador">Filipe Lussaka</h5>
+                        <h5 class="cargoFundador">Diretor de Marketing (CMO) e co-fundador</h5>
+                        <p class="bioFundador">Criamos as pontes de comunicação e as estratégias que conectam visões, oportunidades e investidores, impulsionando a marca Neuravest para o sucesso e a expansão em toda Angola.</p>
+                    </div>
+                </div>
+
+                <div class="cardFundador">
+                    <div>
+                        <img src="assets/img/founder3.png" alt="" srcset="" class="imagemFundador" draggable="false">
+                    </div>
+                    <div>
+                        <h5 class="nomeFundador">Agostinho Mateus</h5>
+                        <h5 class="cargoFundador">Programador, Analista de Dados (CDO) e co-fundador</h5>
+                        <p class="bioFundador">Deciframos dados complexos para gerar valor claro e consistente. Usamos os dados para encontrar caminhos seguros, acessíveis e que respeitam o esforço de quem investe.</p>
+                    </div>
+                </div>
+
+                <div class="cardFundador">
+                    <div>
+                        <img src="assets/img/founder4.png" alt="" srcset="" class="imagemFundador" draggable="false">
+                    </div>
+                    <div>
+                        <h5 class="nomeFundador">Kiara "KiKi" Fernandes</h5>
+                        <h5 class="cargoFundador">Diretora de Comunicações (CCO), Co-Diretora dos Recursos Humanos (Co-CHRO) e Co-fundadora</h5>
+                        <p class="bioFundador">Trabalho para que nossa comunicação traduza inovação tecnológica em benefícios reais para o dia a dia das pessoas. Comunicar bem é cuidar bem.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="py-2.5 lg:flex lg:items-center lg:justify-center">
+            <p class="textosGrandeDestaque">Seu <span class="textoGradiente">dinheiro</span> merece <span class="textoGradiente">trabalhar mais que você.</span></p>
+        </section>
+
+        <section class="relative h-full">
+            <div>
+                <h1 class="tituloSecao">A Sua Prosperidade Vira Realidade. O Que Os Nossos <span class="textoColorido">Investidores Dizem</span></h1>
+                <p class="textoSecao">Não acredite apenas nas nossas palavras; veja a transformação acontecer através de pessoas comuns que decidiram investir com inteligência e quem já estão a prosperar com a Neuravest.. Aqui, as histórias de sucesso não são promessas, são realidades. Permita-se inspirar pelas jornadas de quem, assim como você, decidiu dar o passo rumo a um futuro rico e inteligente. Os depoimentos são reais e refletem a experiência verdadeira de quem investe com a Neuravest. A próxima história de sucesso pode ser a sua.</p>
+            </div>
+            <div class="py-4">
+                <div class="efeitoLuzDepoimentos"></div>
+                <div class="contetorCardDepoimentos">
+
+                    <div class="cardDepoimento">
+                        <div class="divImgSimboloDepoimento">
+                            <img src="assets/img/simbolo_depoimento.png" alt="" srcset="" draggable="false">
+                        </div>
+                        <div class="divTextoDepoimento">
+                            <p>Eu trabalhei duro a vida, nunca soube investir. Já vi vídeos sobre investimentos, mas nunca investi por medo de perder dinheiro. Mas, investi na Neura e nem sei como, mas investi. Hoje vejo meu dinheiro crescer com calma, mês após mês. Isso me deixa feliz e tranquilo.</p>
+                        </div>
+                        <div class="divContentImgNomeProfCliente">
+                            <div class="divImgClienteDepoimento">
+                                <img src="assets/img/cliente.jpg" alt="" srcset="" draggable="false">
+                            </div>
+                            <div class="divContentNomeProfissaoCliente">
+                                <div class="divNomeClienteDepoimento">
+                                    <h6>Pascoal Lukoki</h6>
+                                </div>
+                                <div class="divProfissaoClienteDepoimento">
+                                    <p>Empreendedor</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cardDepoimento">
+                        <div class="divImgSimboloDepoimento">
+                            <img src="assets/img/simbolo_depoimento.png" alt="" srcset="" draggable="false">
+                        </div>
+                        <div class="divTextoDepoimento">
+                            <p>Foi a minha filha que me mostrou isso. Comecei só com 30 mil (KZs), depois meti mais 16 mil (KZs). Esperei um bom tempo sem mexer no dinheiro, quanto tive um problema, minha filha foi levantar no banco... o dinheiro aumentou muito até. Nem acreditei. Mostrei nos meus irmãos também e todos fazemos isso.</p>
+                        </div>
+                        <div class="divContentImgNomeProfCliente">
+                            <div class="divImgClienteDepoimento">
+                                <img src="assets/img/cliente.jpg" alt="" srcset="" draggable="false">
+                            </div>
+                            <div class="divContentNomeProfissaoCliente">
+                                <div class="divNomeClienteDepoimento">
+                                    <h6>Nsimba</h6>
+                                </div>
+                                <div class="divProfissaoClienteDepoimento">
+                                    <p>Zungueira e Doméstica</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cardDepoimento">
+                        <div class="divImgSimboloDepoimento">
+                            <img src="assets/img/simbolo_depoimento.png" alt="" srcset="" draggable="false">
+                        </div>
+                        <div class="divTextoDepoimento">
+                            <p>Já não tenho energia para correr atrás de investimentos como antigamente. E essa empresa (Neuravest.) me apareceu como uma solução tranquila. Coloquei praticamente toda a minha economia e vejo sempre um dinheiro a entrar. É bom sentir que posso ganhar dinheiro, sem me dar dores de cabeça.</p>
+                        </div>
+                        <div class="divContentImgNomeProfCliente">
+                            <div class="divImgClienteDepoimento">
+                                <img src="assets/img/cliente.jpg" alt="" srcset="" draggable="false">
+                            </div>
+                            <div class="divContentNomeProfissaoCliente">
+                                <div class="divNomeClienteDepoimento">
+                                    <h6>Lopes Van-Dúnem</h6>
+                                </div>
+                                <div class="divProfissaoClienteDepoimento">
+                                    <p>Aposentado</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cardDepoimento">
+                        <div class="divImgSimboloDepoimento">
+                            <img src="assets/img/simbolo_depoimento.png" alt="" srcset="" draggable="false">
+                        </div>
+                        <div class="divTextoDepoimento">
+                            <p>Eu tenho experiências em investimentos e mercados financeiros. Ao longo do tempo testei a NeuraIA e o resultado é realmente surpreendete. Fiz um aporte de mais de 7 milhões (KZs) e tive retornos incríveis. Parabén aos jovens envolvidos!</p>
+                        </div>
+                        <div class="divContentImgNomeProfCliente">
+                            <div class="divImgClienteDepoimento">
+                                <img src="assets/img/cliente.jpg" alt="" srcset="" draggable="false">
+                            </div>
+                            <div class="divContentNomeProfissaoCliente">
+                                <div class="divNomeClienteDepoimento">
+                                    <h6>Fernado</h6>
+                                </div>
+                                <div class="divProfissaoClienteDepoimento">
+                                    <p>Empresário e Consultor Financeiro</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cardDepoimento">
+                        <div class="divImgSimboloDepoimento">
+                            <img src="assets/img/simbolo_depoimento.png" alt="" srcset="" draggable="false">
+                        </div>
+                        <div class="divTextoDepoimento">
+                            <p>Quando vi no Facebook que posso multiplicar o meu dinheiro, achei que é um tipo de mentira e ignorei. Na segunda vez que vi, investi um bom kumbu e realmente funcionou. Comecei a fazer isso mais vezes e hoje consegui e faço várias cenas graças a vossa plataforma (Neuravest.).</p>
+                        </div>
+                        <div class="divContentImgNomeProfCliente">
+                            <div class="divImgClienteDepoimento">
+                                <img src="assets/img/cliente.jpg" alt="" srcset="" draggable="false">
+                            </div>
+                            <div class="divContentNomeProfissaoCliente">
+                                <div class="divNomeClienteDepoimento">
+                                    <h6>Dinorrel NBA</h6>
+                                </div>
+                                <div class="divProfissaoClienteDepoimento">
+                                    <p>Cantor</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cardDepoimento">
+                        <div class="divImgSimboloDepoimento">
+                            <img src="assets/img/simbolo_depoimento.png" alt="" srcset="" draggable="false">
+                        </div>
+                        <div class="divTextoDepoimento">
+                            <p>Eu sou uma pessoa muito cuidadosa com o dinheiro e situações que envolvam dinheiro. Mas, a Neuravest. me chamou atenção pelo uso de inteligência artificial e os números fazem sentido para mim. Então, tive confiança e investi - me surpreendi. Hoje, uso a Neura. e todo o meu dinheiro deixo investido.</p>
+                        </div>
+                        <div class="divContentImgNomeProfCliente">
+                            <div class="divImgClienteDepoimento">
+                                <img src="assets/img/cliente.jpg" alt="" srcset="" draggable="false">
+                            </div>
+                            <div class="divContentNomeProfissaoCliente">
+                                <div class="divNomeClienteDepoimento">
+                                    <h6>Jacira Bartolomeu</h6>
+                                </div>
+                                <div class="divProfissaoClienteDepoimento">
+                                    <p>Estudante Universitária</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="py-2">
+                    <p class="font-inter text-white text-center text-[9pt]">Alguns nomes foram modificados ou são fictícios, a pedido dos próprios membros. Na <span class="textoColoridoBold">Neuravest.</span>, valorizamos e respeitamos a privacidade de quem confia em nós.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-2.5 lg:flex lg:items-center lg:justify-center">
+            <p class="textosGrandeDestaque"><span class="textoColoridoBold">Neuravest.</span> <span class="textoGradiente">—</span> onde a <span class="textoGradiente">inteligência</span> investe e o <span class="textoGradiente">futuro</span> rende<span class="textoGradiente">.</span></p>
+        </section>
+
+        <footer class="bg-[#151515] flex flex-col items-center border-2 border-amber-300 p-4  hover:sm:-rotate-6 transition-transform duration-300 ease-in lg:hover:rotate-6" style="border-radius: 30% 90% 70% 30% / 33% 18% 82% 67%;">
+            <div>
+                <a href="./" target="_top"><img src="assets/img/logo.png" alt="imagem da logo da neuravest" srcset="" class="w-16"></a>
+            </div>
+            <div class="flex flex-col items-center justify-center font-inter font-light text-[11pt] text-white gap-1">
+                <div class="gap-1.5">
+                    <a href="#" class="linksRodape">Quem somos?</a>
+                    <a href="#" class="linksRodape">Nossos Perceiros</a>
+                </div>
+                <div>
+                    <a href="#" class="linksRodape">Como Funciona?</a>
+                    <a href="#" class="linksRodape">Perguntas Frequentes</a>
+                </div>
+            </div>
+            <div class="flex items-center justify-center gap-3 my-2">
+                <a href="#"><i class="fa-brands fa-whatsapp linksRodapeSocial"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook linksRodapeSocial"></i></a>
+                <a href="#"><i class="fa-solid fa-paper-plane linksRodapeSocial"></i></a>
+                <a href="#"><i class="fa-solid fa-envelope linksRodapeSocial"></i></a>
+                <a href="#"><i class="fa-solid fa-phone linksRodapeSocial"></i></a>
+                <a href="#"><i class="fa-brands fa-github linksRodapeSocial"></i></a>
+            </div>
+            <div class="flex text-white flex-col items-center justify-center font-inter text-[11pt]">
+                <small>&copy;2025 - <span class="textoColoridoBold">Neuravest.</span></small>
+                <small>Talatona, Luanda, Angola</small>
+                <small>Todos os direitos salvos</small>
+            </div>
+        </footer>
+
+        <div class="flex flex-col items-center justify-center py-4 relative sm:flex-row sm:justify-between">
+            <div class="text-gray-400 font-inter text-[11pt] flex gap-2.5 z-[10]">
+                <a href="#" class="hover:underline">Termos e Condições</a>
+                <a href="#" class="hover:underline">Política de Privacidade</a>
+            </div>
+            <div class="arelative top-4 pb-2.5">
+                <a href="#"><button class="btn">Subir &nbsp; <i class="fa-solid fa-arrow-up relative"></i></button></a>
+            </div>
+            <div class="efeitoLuzFooter"></div>
+        </div>
+    </main>
 </body>
 </html>
