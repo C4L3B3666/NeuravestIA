@@ -474,7 +474,11 @@ hr {
 }
 
 .divSecaoEsquerdaDashboard {
-    @apply flex items-center gap-1.5 
+    @apply flex items-center gap-1.5 text-gray-500
+}
+
+.divSecaoEsquerdaDashboard.ativo {
+    @apply border-l-2 border-l-amber-300 pl-2 text-amber-300 font-bold
 }
 
 .divSecaoEsquerdaDashboard i {
@@ -494,7 +498,7 @@ hr {
 }
 
 .divValor {
-    @apply bg-red-600 m-1 w-[250px] h-[150px] rounded-lg p-4 flex flex-col justify-between cursor-pointer
+    @apply bg-[#151515a6] border-[#2e2c2c] border-2 m-1 w-[250px] h-[150px] rounded-lg p-4 flex flex-col justify-between cursor-pointer
 }
 
 .divValor div:nth-child(1) {
@@ -502,13 +506,13 @@ hr {
 }
 
 .divValor div:nth-child(1) h5 {
-    @apply font-inter uppercase font-medium
+    @apply font-inter uppercase font-bold text-gray-500
 }
 
 .divValor div:nth-child(2) h4 {
-    @apply text-center font-ibm font-bold text-[18pt]
+    @apply text-center font-inter font-black text-[18pt]
 }
 
 .divValor div:nth-child(1) i {
-    @apply -rotate-45 text-white
+    @apply -rotate-45 text-amber-300
 }

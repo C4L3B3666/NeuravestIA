@@ -10,8 +10,9 @@
     <meta name="googlebot" content="index, follow">
     <meta name="mobile-web-app-capable" content="yes">
     <script src="../assets/js/script.js" defer></script>
-    <link rel="stylesheet" href="../assets/css/output.css"
+    <link rel="stylesheet" href="../assets/css/output.css">
     <link rel="canonical" href="https://www.neuravest.com">
+    <script src="path/to/chartjs/dist/chart.umd.min.js"></script>
     <meta property="og:url" content="https://www.neuravest.com">
     <link rel="shortcut icon" href="../assets/img/logo.png" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -20,6 +21,9 @@
     <meta property="og:description" content="O Neuravest usa IA e estatísticas avançadas para identificar investimentos eficientes e escaláveis precisão.">
     <meta name="description" content="Neuravest é uma plataforma de investimentos inteligente que usa algoritmos de IA avançada para otimizar sua carteira de investimentos">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script>
+        const myChart = new Chart(ctx, {...});
+    </script>
     <noscript>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     </noscript>
@@ -46,7 +50,7 @@
                 <i class="fa-solid fa-robot"></i>
                 <h5 class="textoSecaoEsquerdaDashboard">NeuraInfo</h5>
             </div>
-            <div class="divSecaoEsquerdaDashboard">
+            <div class="divSecaoEsquerdaDashboard ativo">
                 <i class="fa-solid fa-money-bill-wave"></i>
                 <h5 class="textoSecaoEsquerdaDashboard">Saldo</h5>
             </div>
@@ -74,16 +78,16 @@
                 <i class="fa-solid fa-person-running"></i>
                 <h5 class="textoSecaoEsquerdaDashboard">Terminar Sessão</h5>
             </div>
-            <div class="border-2 border-[#2E2C2C] p-4 rounded-lg">
-                <h5 class="font-ibm text-[16pt] uppercase font-bold text-center">Convide seus amigos e ganhe 15.000,00KZs de bónus! <i class="fa-solid fa-bolt"></i></h5>
+            <div class="border-2 border-[#2E2C2C] p-2 rounded-lg text-white">
+                <h5 class="font-ibm text-[16pt] uppercase font-bold text-center"><span class="textoColorido">Convide</span> seus amigos e <span class="textoColorido">ganhe 15.000,00KZs</span> de bónus! <i class="fa-solid fa-bolt"></i></h5>
                 <h6 class="font-inter font-light text-center">Mudar o teu futuro financeiro depende somente de você.</h6>
             </div>
         </div>
-       <div class="bg-gray-600 w-full p-4">
+       <div class="bg-[#1d1c1c] w-full p-4">
             <div class="flex items-center justify-between">
                 <div>
-                    <h1 class="font-ibm text-2xl font-bold -mb-1.5 uppercase">Olá, Neurania</h1>
-                    <small>É sempre bom ver você por aqui!</small>
+                    <h1 class="font-ibm text-2xl font-bold -mb-1.5 uppercase text-white">Olá, <span class="textoColorido">Neurania.</span></h1>
+                    <small class="text-gray-500">É sempre bom ver você por aqui!</small>
                 </div>
 
                 <div class="flex items-center gap-2.5">
@@ -91,8 +95,8 @@
                         <input type="search" name="pesquisa" id="pesquisa" class="border-2 border-[#2e2c2c] rounded-full outline-0 py-1 px-1.5 w-[350px]">
                     </div>
                     <div class="divNomeAlcunhaInvestidor">
-                        <h4 class="uppercase font-bold">Neurania Makiesse</h4>
-                        <small>Neurania Neury</small>
+                        <h4 class="uppercase font-bold text-amber-300">Neurania Makiesse</h4>
+                        <small class="text-gray-500 font-bold">Neurania Neury</small>
                     </div>
                 </div>
 
@@ -100,41 +104,41 @@
             <div class="flex">
                 <div class="divValor">
                     <div>
-                        <h5>Seu Dinheiro Agora</h5>
+                        <h5>Saldo (Kzs)</h5>
                         <i class="fa-solid fa-arrow-right"></i>
                     </div>
                     <div>
-                        <h4 class="valorDisponivel">20 345 132,84 KZS</h4>
+                        <h4 class="valorDisponivel textoGradiente">20 345 132,84</h4>
                     </div>   
                 </div>
 
                 <div class="divValor">
                     <div>
-                        <h5>Total Investido</h5>
+                        <h5>Investido (kzs)</h5>
                         <i class="fa-solid fa-arrow-right"></i>
                     </div>
                     <div>
-                        <h4 class="valorDisponivel">2 234 100,00 KZs</h4>
+                        <h4 class="valorDisponivel textoGradiente">2 234 100,00</h4>
                     </div>   
                 </div>
 
                 <div class="divValor">
                     <div>
-                        <h5>Total de Ganhos</h5>
+                        <h5>Ganhos (kzs)</h5>
                         <i class="fa-solid fa-arrow-right"></i>
                     </div>
                     <div>
-                        <h4 class="valorDisponivel">15 542 456,00 KZs</h4>
+                        <h4 class="valorDisponivel textoGradiente">15 542 456,00</h4>
                     </div>   
                 </div>
 
                 <div class="divValor">
                     <div>
-                        <h5>Total Sacado</h5>
+                        <h5>Sacado (kzs)</h5>
                         <i class="fa-solid fa-arrow-right"></i>
                     </div>
                     <div>
-                        <h4 class="valorDisponivel">3 500 000,00 KZs</h4>
+                        <h4 class="valorDisponivel textoGradiente">3 500 000,00</h4>
                     </div>   
                 </div>
             </div>
