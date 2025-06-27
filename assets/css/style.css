@@ -484,3 +484,11 @@ hr {
 .textoSecaoEsquerdaDashboard {
     @apply font-inter 
 }
+
+.divNomeAlcunhaInvestidor {
+    @apply flex flex-col font-ibm
+}
+
+.divNomeAlcunhaInvestidor small {
+    @apply font-inter text-[8pt]
+}
