@@ -492,3 +492,23 @@ hr {
 .divNomeAlcunhaInvestidor small {
     @apply font-inter text-[8pt]
 }
+
+.divValor {
+    @apply bg-red-600 m-1 w-[250px] h-[150px] rounded-lg p-4 flex flex-col justify-between cursor-pointer
+}
+
+.divValor div:nth-child(1) {
+    @apply flex justify-between items-center
+}
+
+.divValor div:nth-child(1) h5 {
+    @apply font-inter uppercase font-medium
+}
+
+.divValor div:nth-child(2) h4 {
+    @apply text-center font-ibm font-bold text-[18pt]
+}
+
+.divValor div:nth-child(1) i {
+    @apply -rotate-45 text-white
+}
