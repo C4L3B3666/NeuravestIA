@@ -497,7 +497,7 @@ hr {
     @apply font-inter text-[8pt]
 }
 
-.divValor {
+.divValor, .divOndeIAInvestiu  {
     @apply bg-[#151515a6] border-[#2e2c2c] border-2 m-1 w-[250px] h-[150px] rounded-lg p-4 flex flex-col justify-between cursor-pointer
 }
 
@@ -515,4 +515,16 @@ hr {
 
 .divValor div:nth-child(1) i {
     @apply -rotate-45 text-amber-300
+}
+
+.divOndeIAInvestiu {
+    @apply text-center
+}
+
+.divOndeIAInvestiu h5 {
+    @apply font-bold font-ibm text-amber-300
+}
+
+.divOndeIAInvestiu .valorInvestidoIa {
+    @apply font-inter text-[14pt] font-bold
 }
