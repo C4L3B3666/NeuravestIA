@@ -11,10 +11,13 @@
     --color-red-500: oklch(63.7% 0.237 25.331);
     --color-amber-200: oklch(92.4% 0.12 95.746);
     --color-amber-300: oklch(87.9% 0.169 91.605);
+    --color-green-400: oklch(79.2% 0.209 151.711);
     --color-gray-400: oklch(70.7% 0.022 261.325);
     --color-gray-500: oklch(55.1% 0.027 264.364);
     --color-white: #fff;
     --spacing: 0.25rem;
+    --text-2xl: 1.5rem;
+    --text-2xl--line-height: calc(2 / 1.5);
     --text-3xl: 1.875rem;
     --text-3xl--line-height: calc(2.25 / 1.875);
     --font-weight-extralight: 200;
@@ -258,6 +261,9 @@
   .w-\[205px\] {
     width: 205px;
   }
+  .w-\[300px\] {
+    width: 300px;
+  }
   .w-full {
     width: 100%;
   }
@@ -328,6 +334,9 @@
   .rounded-full {
     border-radius: calc(infinity * 1px);
   }
+  .rounded-lg {
+    border-radius: var(--radius-lg);
+  }
   .border-2 {
     border-style: var(--tw-border-style);
     border-width: 2px;
@@ -343,6 +352,9 @@
   }
   .bg-\[\#15151585\] {
     background-color: #15151585;
+  }
+  .bg-red-500 {
+    background-color: var(--color-red-500);
   }
   .p-1 {
     padding: calc(var(--spacing) * 1);
@@ -397,6 +409,10 @@
   }
   .font-inter {
     font-family: var(--font-inter);
+  }
+  .text-2xl {
+    font-size: var(--text-2xl);
+    line-height: var(--tw-leading, var(--text-2xl--line-height));
   }
   .text-3xl {
     font-size: var(--text-3xl);
@@ -1744,6 +1760,17 @@ hr {
   @media (width >= 40rem) {
     text-align: center;
   }
+}
+.divSecaoEsquerdaDashboard {
+  display: flex;
+  align-items: center;
+  gap: calc(var(--spacing) * 1.5);
+}
+.divSecaoEsquerdaDashboard i {
+  font-size: 15pt;
+}
+.textoSecaoEsquerdaDashboard {
+  font-family: var(--font-inter);
 }
 @property --tw-translate-x {
   syntax: "*";

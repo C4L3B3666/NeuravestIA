@@ -472,3 +472,15 @@ hr {
 .paragrafoFinalForm {
     @apply text-white font-inter text-[10pt] font-light sm:text-center
 }
+
+.divSecaoEsquerdaDashboard {
+    @apply flex items-center gap-1.5 
+}
+
+.divSecaoEsquerdaDashboard i {
+    @apply text-[15pt]
+}
+
+.textoSecaoEsquerdaDashboard {
+    @apply font-inter 
+}
