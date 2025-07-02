@@ -1911,6 +1911,37 @@ hr {
   --tw-font-weight: var(--font-weight-bold);
   font-weight: var(--font-weight-bold);
 }
+.contentDivValorSecao {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.divValorOpcao {
+  height: max-content;
+  width: max-content;
+  --tw-border-style: none;
+  border-style: none;
+  padding: calc(var(--spacing) * 0);
+}
+.divValorOpcao div:nth-child(1) {
+  display: none;
+}
+.divValorOpcao div:nth-child(2) h4 {
+  text-align: center;
+  font-family: var(--font-inter);
+  font-size: 50pt;
+  --tw-font-weight: var(--font-weight-black);
+  font-weight: var(--font-weight-black);
+}
+.textoValorOpcao {
+  background-color: var(--color-amber-300);
+  padding-inline: calc(var(--spacing) * 1.5);
+  font-family: var(--font-inter);
+  font-size: 13pt;
+  color: #151515;
+}
 @property --tw-translate-x {
   syntax: "*";
   inherits: false;

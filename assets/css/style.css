@@ -528,3 +528,23 @@ hr {
 .divOndeIAInvestiu .valorInvestidoIa {
     @apply font-inter text-[14pt] font-bold
 }
+
+.contentDivValorSecao {
+    @apply h-screen justify-center flex flex-col items-center
+}
+
+.divValorOpcao {
+    @apply border-none w-max p-0 h-max
+}
+
+.divValorOpcao div:nth-child(1) {
+    @apply hidden
+}
+
+.divValorOpcao div:nth-child(2) h4 {
+    @apply text-center font-inter font-black text-[50pt]
+}
+
+.textoValorOpcao {
+    @apply font-inter bg-amber-300 px-1.5 text-[#151515] text-[13pt]
+}
