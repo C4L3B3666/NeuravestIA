@@ -537,14 +537,26 @@ hr {
     @apply border-none w-max p-0 h-max
 }
 
-.divValorOpcao div:nth-child(1) {
-    @apply hidden
+.divValorOpcao div:nth-child(1) h5 {
+    @apply text-amber-300
 }
 
 .divValorOpcao div:nth-child(2) h4 {
-    @apply text-center font-inter font-black text-[50pt]
+    @apply text-center font-inter font-black text-[64pt]
 }
 
 .textoValorOpcao {
-    @apply font-inter bg-amber-300 px-1.5 text-[#151515] text-[13pt]
+    @apply font-inter bg-amber-300 px-1.5 text-[#151515] text-[13pt] text-center
+}
+
+#cardInvestimento {
+    @apply hidden
+}
+
+#cardGanhos {
+    @apply hidden
+}
+
+#cardRetirado {
+    @apply hidden
 }

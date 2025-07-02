@@ -288,6 +288,9 @@
   .w-\[300px\] {
     width: 300px;
   }
+  .w-\[305px\] {
+    width: 305px;
+  }
   .w-\[350px\] {
     width: 350px;
   }
@@ -1925,22 +1928,32 @@ hr {
   border-style: none;
   padding: calc(var(--spacing) * 0);
 }
-.divValorOpcao div:nth-child(1) {
-  display: none;
+.divValorOpcao div:nth-child(1) h5 {
+  color: var(--color-amber-300);
 }
 .divValorOpcao div:nth-child(2) h4 {
   text-align: center;
   font-family: var(--font-inter);
-  font-size: 50pt;
+  font-size: 64pt;
   --tw-font-weight: var(--font-weight-black);
   font-weight: var(--font-weight-black);
 }
 .textoValorOpcao {
   background-color: var(--color-amber-300);
   padding-inline: calc(var(--spacing) * 1.5);
+  text-align: center;
   font-family: var(--font-inter);
   font-size: 13pt;
   color: #151515;
+}
+#cardInvestimento {
+  display: none;
+}
+#cardGanhos {
+  display: none;
+}
+#cardRetirado {
+  display: none;
 }
 @property --tw-translate-x {
   syntax: "*";
