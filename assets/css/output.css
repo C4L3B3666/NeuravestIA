@@ -218,6 +218,9 @@
   .z-\[100\] {
     z-index: 100;
   }
+  .z-\[200\] {
+    z-index: 200;
+  }
   .m-3 {
     margin: calc(var(--spacing) * 3);
   }
@@ -226,6 +229,9 @@
   }
   .my-2 {
     margin-block: calc(var(--spacing) * 2);
+  }
+  .my-3 {
+    margin-block: calc(var(--spacing) * 3);
   }
   .mt-8 {
     margin-top: calc(var(--spacing) * 8);
@@ -247,6 +253,12 @@
   }
   .h-\[97vh\] {
     height: 97vh;
+  }
+  .h-\[400px\] {
+    height: 400px;
+  }
+  .h-auto {
+    height: auto;
   }
   .h-full {
     height: 100%;
@@ -275,8 +287,14 @@
   .w-\[90\%\] {
     width: 90%;
   }
+  .w-\[90vw\] {
+    width: 90vw;
+  }
   .w-\[98vw\] {
     width: 98vw;
+  }
+  .w-\[100px\] {
+    width: 100px;
   }
   .w-\[140px\] {
     width: 140px;
@@ -420,6 +438,9 @@
   .bg-red-400 {
     background-color: var(--color-red-400);
   }
+  .bg-red-500 {
+    background-color: var(--color-red-500);
+  }
   .p-1 {
     padding: calc(var(--spacing) * 1);
   }
@@ -452,6 +473,9 @@
   }
   .py-7 {
     padding-block: calc(var(--spacing) * 7);
+  }
+  .py-8 {
+    padding-block: calc(var(--spacing) * 8);
   }
   .pt-4 {
     padding-top: calc(var(--spacing) * 4);
@@ -624,9 +648,24 @@
       }
     }
   }
+  .sm\:relative {
+    @media (width >= 40rem) {
+      position: relative;
+    }
+  }
   .sm\:left-32 {
     @media (width >= 40rem) {
       left: calc(var(--spacing) * 32);
+    }
+  }
+  .sm\:m-3 {
+    @media (width >= 40rem) {
+      margin: calc(var(--spacing) * 3);
+    }
+  }
+  .sm\:h-\[97vh\] {
+    @media (width >= 40rem) {
+      height: 97vh;
     }
   }
   .sm\:max-h-\[590px\] {
@@ -639,6 +678,11 @@
       width: calc(3/4 * 100%);
     }
   }
+  .sm\:w-\[98vw\] {
+    @media (width >= 40rem) {
+      width: 98vw;
+    }
+  }
   .sm\:w-\[400px\] {
     @media (width >= 40rem) {
       width: 400px;
@@ -647,6 +691,11 @@
   .sm\:w-full {
     @media (width >= 40rem) {
       width: 100%;
+    }
+  }
+  .sm\:max-w-\[255px\] {
+    @media (width >= 40rem) {
+      max-width: 255px;
     }
   }
   .sm\:flex-col {
@@ -677,6 +726,11 @@
   .sm\:justify-center {
     @media (width >= 40rem) {
       justify-content: center;
+    }
+  }
+  .sm\:p-4 {
+    @media (width >= 40rem) {
+      padding: calc(var(--spacing) * 4);
     }
   }
   .sm\:px-16 {
