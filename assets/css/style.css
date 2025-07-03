@@ -473,90 +473,93 @@ hr {
     @apply text-white font-inter text-[10pt] font-light sm:text-center
 }
 
-.divSecaoEsquerdaDashboard {
-    @apply flex items-center gap-1.5 text-gray-500
+.botaoSecaoEsquerda {
+    @apply font-ibm font-semibold text-white uppercase transition-colors duration-200 ease-linear cursor-pointer
 }
 
-.divSecaoEsquerdaDashboard.ativo {
-    @apply border-l-2 border-l-amber-300 pl-2 text-amber-300 font-bold
+.botaoSecaoEsquerda.ativo {
+    @apply text-amber-400 font-bold
 }
 
-.divSecaoEsquerdaDashboard i {
-    @apply text-[15pt]
+.botaoSecaoEsquerda i {
+    @apply pr-2
 }
 
-.textoSecaoEsquerdaDashboard {
-    @apply font-inter 
+.btnOutSecaoEsquerda {
+    @apply bg-red-500 shadow-[0_0_14px_#FB2C36] border-[#FB2C36] text-white
 }
 
-.divNomeAlcunhaInvestidor {
-    @apply flex flex-col font-ibm
+.cardDivValor {
+    @apply w-[250px] p-2 rounded-lg h-[110px] flex flex-col justify-between cursor-pointer border-2 border-[#2E2C2C]
 }
 
-.divNomeAlcunhaInvestidor small {
-    @apply font-inter text-[8pt]
+.divValorCima {
+    @apply flex justify-between items-center text-amber-300 text-[11pt]
 }
 
-.divValor, .divOndeIAInvestiu  {
-    @apply bg-[#151515a6] border-[#2e2c2c] border-2 m-1 w-[250px] h-[150px] rounded-lg p-4 flex flex-col justify-between cursor-pointer
+.iconeDivValor {
+    @apply -rotate-45
 }
 
-.divValor div:nth-child(1) {
-    @apply flex justify-between items-center
+.cardDivValor .divValorCima .nomeCardDivValor {
+    @apply font-ibm uppercase font-bold
 }
 
-.divValor div:nth-child(1) h5 {
-    @apply font-inter uppercase font-bold text-gray-500
+.cardDivValor div .valor {
+    @apply font-inter font-bold text-[22pt] 
 }
 
-.divValor div:nth-child(2) h4 {
-    @apply text-center font-inter font-black text-[18pt]
+.divOndeIaInvestiu {
+    @apply border-2 border-[#2E2C2C] p-2 w-[200px] h-[100px] flex flex-col justify-between rounded-lg
 }
 
-.divValor div:nth-child(1) i {
-    @apply -rotate-45 text-amber-300
+.ondeIaInvestiuCima{
+    @apply flex justify-between items-center text-amber-300 text-[13pt]
 }
 
-.divOndeIAInvestiu {
-    @apply text-center
+.ondeIaInvestiuCima h6 {
+    @apply font-ibm text-amber-300 font-bold
 }
 
-.divOndeIAInvestiu h5 {
-    @apply font-bold font-ibm text-amber-300
+.divOndeIaInvestiu div h5 {
+    @apply font-inter text-center font-bold text-[13pt]
 }
 
-.divOndeIAInvestiu .valorInvestidoIa {
-    @apply font-inter text-[14pt] font-bold
+.contentDivOpcoes {
+    @apply w-full h-full flex justify-center items-center flex-col 
 }
 
-.contentDivValorSecao {
-    @apply h-screen justify-center flex flex-col items-center
+.cardOpcaoSecaoEsquerda {
+    @apply w-max h-[25%] flex flex-col justify-between items-center p-1
 }
 
-.divValorOpcao {
-    @apply border-none w-max p-0 h-max
+.cardOpcaoSecaoEsquerda .divTodoValor {
+    @apply flex items-center justify-between w-full
 }
 
-.divValorOpcao div:nth-child(1) h5 {
-    @apply text-amber-300
+.divTodoValor {
+    @apply text-amber-400
 }
 
-.divValorOpcao div:nth-child(2) h4 {
-    @apply text-center font-inter font-black text-[64pt]
+.divTodoValor i {
+    @apply -rotate-45
 }
 
-.textoValorOpcao {
-    @apply font-inter bg-amber-300 px-1.5 text-[#151515] text-[13pt] text-center
+.divTodoValor h5 {
+    @apply font-inter uppercase font-bold text-[10pt]
 }
 
-#cardInvestimento {
-    @apply hidden
+.divValor .valor {
+    @apply font-inter font-bold text-[50pt]
 }
 
-#cardGanhos {
-    @apply hidden
+.divContentMensagem {
+    @apply bg-amber-300 p-1 px-1.5 rounded-full shadow-[0_0_12px_#FFD230]
 }
 
-#cardRetirado {
-    @apply hidden
+.mensagemValor {
+    @apply font-inter
+}
+.EfeitoLuzDashboard2 {
+    @apply -bottom-30 opacity-100
 }
